@@ -57,7 +57,7 @@ function showCountryInfo(country) {
     <img src="${country.flags.svg}" alt="Flag of ${country.name.common}" style="width: 100%; max-width: 200px;">
     <p><strong>Capital:</strong> ${country.capital ? country.capital[0] : 'N/A'}</p>
     <p><strong>Población:</strong> ${country.population.toLocaleString()}</p>
-    <p><strong>Lado de la carretera:</strong> ${country.car ? country.car : 'N/A'}</p>
+    <p><strong>Lado de la carretera:</strong> ${country.car ? country.car.side : 'N/A'}</p>
     <button id="close-btn">Cerrar</button>
   `;
 
